@@ -8,7 +8,7 @@ A modern, responsive landing page for BiteHub, crafted using **Semantic HTML**, 
 
 ## 🚀 Live Preview
 
-Check out the live version here: [VivaDecor Live]()
+Check out the live version here: [VivaDecor Live](https://viva-decor-three.vercel.app/)
 
 ## 📌 Features
 
