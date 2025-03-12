@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hamburger-item {
+  @apply w-8 bg-white h-[3px] rounded-md
+}
+
+.expand-header {
+  height: 320px;
+}
+
+.expand-header .hamburger-item:first-child {
+  transform: rotate(40deg) translate(4px, 6px);
+}
+
+.expand-header .hamburger-item:nth-child(2) {
+  transform: rotate(-40deg);
+}
+
+.expand-header .hamburger-item:last-child {
+  transform: translateX(-5px);
+  opacity: 0;
+}
+
+.statistics-item {
+  @apply flex flex-col gap-y-1 text-secondary
+}
+
+.service-item {
+  @apply flex items-start gap-x-6
+}
+
+.service-item__content {
+  @apply flex flex-col gap-y-1 text-primary
+}
+
+.service-item__content__top {
+  @apply mb-4 text-lg font-semibold text-primary lg:text-3xl
+}
+
+.service-item__content__bottom {
+  @apply text-sm text-secondary lg:text-xl
+}
+
+.step-item {
+  @apply flex items-start justify-center gap-x-5
+}
+
+.step-item__left-side {
+  @apply flex flex-col items-center gap-y-3
+}
+.step-icon {
+  @apply w-[72px] h-[72px] p-2 rounded-full bg-primary flex justify-center items-center
+}
+.vertical-bar {
+  @apply block border border-[#9B9B9B] w-[1px] h-[50px] lg:h-[102px]
+}
+.step-item__content {
+  @apply flex flex-col gap-y-3
+}
+.step-item__title {
+  @apply font-bold text-primary lg:text-3xl
+}
+.step-item__desc {
+  @apply text-sm text-secondary lg:text-2xl
+}

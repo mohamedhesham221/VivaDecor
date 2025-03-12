@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/output.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>VivaDecor</title>
+</head>
+
+<body class="min-h-[100vh] font-inter">
+  <!-- Header Section -->
+  <header
+    class="relative flex flex-col justify-between h-16 py-6 overflow-hidden transition-all shadow-sm md:flex-row shadow-primary md:items-center gap-y-3 bg-primary md:bg-white md:shadow-none px-7 lg:px-24 lg:py-11">
+    <!-- Logo Section -->
+    <img src="./assets/img/Logo.png" alt="VivaDecor logo" class="w-20 h-auto invert brightness-0 md:brightness-[unset] md:invert-[unset] lg:w-44 lg:h-12">
+    <!-- Navigation Menu -->
+    <nav class="text-white md:text-primary" aria-label="Main Navigation">
+      <ul class="flex flex-col md:flex-row gap-y-3 md:gap-x-5 lg:gap-x-8">
+        <li class="font-semibold lg:text-2xl"><a href="#">Home</a></li>
+        <li class="font-semibold lg:text-2xl"><a href="#">Services</a></li>
+        <li class="font-semibold lg:text-2xl"><a href="#">Contact</a></li>
+        <li class="font-semibold lg:text-2xl"><a href="#">Support</a></li>
+      </ul>
+    </nav>
+    <!-- Sign Up Button -->
+    <button class="p-1 bg-white rounded text-primary md:w-32 md:text-white md:bg-primary lg:w-44 lg:h-14 lg:text-xl" aria-label="Toggle Navigation">Sign Up</button>
+    <!-- Mobile Navigation Toggle Button -->
+    <div class="absolute z-50 flex flex-col items-end gap-1 top-6 right-5 md:hidden" id="hamburger">
+      <span class="transition-all hamburger-item"></span>
+      <span class="transition-all hamburger-item"></span>
+      <span class="!w-4 hamburger-item transition-all"></span>
+    </div>
+  </header>
+  <main class="py-6 px-7  lg:px-24 lg:py-11">
+    <!-- Hero Section -->
+    <section class="flex flex-col gap-3 md:flex-row">
+      <div class="flex flex-col gap-y-8 md:w-1/2 lg:gap-y-14">
+        <h1 class="text-5xl font-medium text-primary lg:text-8xl lg:whitespace-nowrap">Interior Design</h1>
+        <p class="text-sm font-medium text-secondary lg:text-lg lg:leading-10">Step into a world where the art of Interior Design is meticulously
+          crafted to bring together timeless
+          elegance and cutting-edge
+          modern Innovation, Allowing you to transform your living spaces into the epitome of luxury and sophistication
+        </p>
+        <!-- CTA Button -->
+        <button class="h-10 text-white bg-primary w-36 lg:w-72 lg:h-20 lg:text-2xl">Start Project</button>
+        <!-- Statistics Section -->
+        <div class="flex flex-wrap gap-3 lg:gap-10 lg:mt-20">
+          <p class="statistics-item">
+            <span class="text-4xl lg:text-6xl">400+</span>
+            <span class="text-sm lg:text-lg">Project Complete</span>
+          </p>
+          <p class="statistics-item">
+            <span class="text-4xl lg:text-6xl">600+</span>
+            <span class="text-sm lg:text-lg">Satisfied Clients</span>
+          </p>
+          <p class="statistics-item">
+            <span class="text-4xl lg:text-6xl">100+</span>
+            <span class="text-sm lg:text-lg">Unique Styles</span>
+          </p>
+        </div>
+      </div>
+      <!-- Right Content - Hero Image -->
+      <div class="relative h-[410px] md:w-1/2 lg:h-auto">
+        <img src="./assets/img/Image 1.png" alt="Beautifully furnitures (portraiat, rounded table and sofa chair)"
+          class="absolute top-0 right-0 z-50 h-auto w-72 lg:w-2/3" loading="lazy">
+        <img src="./assets/img/Image 2.png" alt="Beautifully furnitures (couch, carpet and planet)"
+          class="absolute bottom-0 left-0 z-50 h-auto w-72 lg:w-11/12" loading="lazy">
+        <div class="border-[2px] border-primary w-28 h-28 lg:w-36 lg:h-36 absolute left-[-15px] top-36 z-0 lg:top-80 ">
+        </div>
+        <div class="flex items-center justify-center w-24 h-24 bg-primary absolute right-0 bottom-0 z-[55]">
+          <img src="./assets/img/arrow.png" alt="Down arrow" class="w-4 h-9" loading="lazy">
+        </div>
+      </div>
+    </section>
+    <!-- Service Section -->
+    <section class="mt-20 lg:mt-40">
+      <h2
+        class="text-3xl font-semibold before:w-12 before:h-0 text-primary before:content:[''] before:block before:border before:border-primary flex justify-center md:justify-start gap-x-5 items-center mb-10 lg:text-5xl lg:before:w-24 lg:mb-24">
+        Our Services</h2>
+      <div class="flex flex-col items-start justify-center gap-4 md:flex-row">
+        <!-- Service Item -->
+        <div class="service-item">
+          <img src="./assets/img/Lighting design icon.png" alt="Lighting design icon" loading="lazy" class="w-14 lg:w-20">
+          <p class="service-item__content">
+            <span class="service-item__content__top">Lighting Design</span>
+            <span class="service-item__content__bottom">Achieve the perfect balance of ambient, task, and accent
+              lighting for a functional atmosphere</span>
+          </p>
+        </div>
+        <!-- Service Item -->
+        <div class="service-item">
+          <img src="./assets/img/Interior design icon.png" alt="Interior design icon" loading="lazy" class="w-14 lg:w-20">
+          <p class="service-item__content">
+            <span class="service-item__content__top">Interior Design</span>
+            <span class="service-item__content__bottom">From concept to completion, we oversee every detail to bring
+              your vision to life efficiently</span>
+          </p>
+        </div>
+        <!-- Service Item -->
+        <div class="service-item">
+          <img src="./assets/img/Outdoor design icon.png" alt="Outdoor design icon.png" loading="lazy" class="w-14 lg:w-20">
+          <p class="service-item__content ">
+            <span class="service-item__content__top">Outdoor Design</span>
+            <span class="service-item__content__bottom">Celebrate the changing seasons with our seasonal outdoor decor
+              services</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="flex flex-col gap-6 mt-20 md:flex-row lg:gap-12 lg:mt-40">
+      <img src="./assets/img/mask-group-1.png" alt="Beautifully furnitures" loading="lazy" class="md:w-1/2">
+      <div class="flex flex-col gap-y-6 md:w-1/2 lg:gap-y-14">
+        <h2 class="text-2xl font-semibold text-primary lg:text-5xl">Designing Your Dream With Brilliance</h2>
+        <!-- FAQ Content -->
+        <p class="text-base text-secondary lg:text-2xl">Elevate your spaces with bespoke interior designs that reflect your unique
+          style and aspirations, crafted with precision and brilliance for an unforgettable living experience</p>
+        <div class="flex flex-col gap-y-5">
+          <p class="flex items-center justify-between pb-3 border-b border-third">
+            <span class="text-sm lg:text-2xl">Living Room Interior Design</span>
+            <img src="./assets/img/plus.png" alt="Plus icon" class="w-5 h-auto" loading="lazy">
+          </p>
+          <p class="flex items-center justify-between pb-3 border-b border-third">
+            <span class="text-sm lg:text-2xl">Commercial Office Room Interior Design</span>
+            <img src="./assets/img/plus.png" alt="Plus icon" class="w-5 h-auto">
+          </p>
+        </div>
+        <!-- Learn More Button -->
+        <button class="h-10 text-white bg-primary w-36 lg:w-64 lg:h-20 lg:text-2xl" aria-label="Learn More">Learn More</button>
+      </div>
+    </section>
+    <!-- Project process Section -->
+    <section class="flex flex-col gap-6 mt-20 md:flex-row lg:mt-40">
+      <div class="md:w-1/2">
+        <h2 class="mb-12 text-2xl font-semibold text-primary md:text-4xl lg:text-5xl">Designing Your Dream in Three Simple Steps</h2>
+        <!-- Process Steps -->
+        <div class="flex flex-col gap-y-4 lg:gap-y-16">
+          <!-- Step 1 -->
+          <div class="step-item">
+            <div class="step-item__left-side">
+              <span class="step-icon">
+                <img src="./assets/img/icon-1.png" alt="Rocket icon" loading="lazy">
+              </span>
+              <span class="vertical-bar"></span>
+            </div>
+            <div>
+              <p class="step-item__content">
+                <span class="step-item__title">Start Project</span>
+                <span class="step-item__desc">Embark on your design adventure by initiating your project. Share your
+                  vision and set the stage for a bespoke design experience</span>
+              </p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="step-item">
+            <div class="step-item__left-side">
+              <span class="step-icon">
+                <img src="./assets/img/icon-2.png" alt="Lamp icon">
+              </span>
+              <span class="vertical-bar"></span>
+            </div>
+            <div>
+              <p class="step-item__content">
+                <span class="step-item__title">Craft</span>
+                <span class="step-item__desc">Collaborate closely to achieve design excellence refining your vision and
+                  crafting brilliance into every aspect of your space</span>
+              </p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="step-item">
+            <div class="step-item__left-side">
+              <span class="step-icon">
+                <img src="./assets/img/icon-3.png" alt="Checkmark icon">
+              </span>
+            </div>
+            <div>
+              <p class="step-item__content">
+                <span class="step-item__title">Execute</span>
+                <span class="step-item__desc">EWitness your vision becoming a reality as we execute the design plan with
+                  precision. Celebrate the joy of your newly transformed space</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/img/mask-group-2.png" alt="Beautifully furnitures" loading="lazy" class="md:w-1/2">
+    </section>
+    <!-- Testimonials Section -->
+    <section class="relative flex flex-col gap-6 mt-28 md:flex-row lg:mt-40">
+      <img src="./assets/img/mask-group-3.png" alt="Beautifully furnitures" loading="lazy" class="md:w-1/2">
+      <h2 class="text-3xl font-semibold text-primary md:w-1/2 lg:text-5xl">What Our Customers Say About Us</h2>
+      <!-- Testimonials Content -->
+      <div class="flex flex-col gap-10 p-4 bg-white md:absolute md:top-[80px] md:right-0 md:flex-row md:w-10/12 md:h-[350px] lg:top-[144px] lg:h-[500px]">
+        <!-- Testimonial 1 -->
+        <div class="flex flex-col px-6 py-10 rounded bg-primary gap-y-10 md:gap-y-6 lg:gap-y-14">
+          <img src="./assets/img/qoute.png" alt="qoute icon" class="w-14">
+          <p class="text-sm font-medium text-white lg:text-2xl">Working with your design team was an absolute pleasure. The
+            attention to detail and creativity exceeded my expectations. Thank you for making my home beautiful!</p>
+          <div class="flex items-center gap-3">
+            <img src="./assets/img/avatar-1.png" alt="Avatar" class="w-11 lg:w-16">
+            <p>
+              <span class="block text-sm font-semibold text-white lg:text-2xl">Sophie Carter</span>
+              <span class="text-sm text-[#929292] lg:tex-xl">New York, USA</span>
+            </p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="flex flex-col px-6 py-10 rounded bg-primary gap-y-10 md:gap-y-6 lg:gap-y-14">
+          <img src="./assets/img/qoute.png" alt="qoute icon" class="w-14">
+          <p class="text-sm font-medium text-white lg:text-2xl">Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!</p>
+          <div class="flex items-center gap-3">
+            <img src="./assets/img/avatar-2.png" alt="Avatar" class="w-11 lg:w-16">
+            <p>
+              <span class="block text-sm font-semibold text-white lg:text-2xl">James Bennett</span>
+              <span class="text-sm text-[#929292] lg:tex-xl">Toronto, Canada</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 flex items-start justify-center md:bottom-[-58px] gap-x-4">
+        <span class="bg-[#F1F1F1] w-10 h-10 flex items-center justify-center">
+          <img src="./assets/img/chevron.png" alt="Chevron left icon" class="w-4">
+        </span>
+        <span class="bg-[#F1F1F1] w-10 h-10 flex items-center justify-center">
+          <img src="./assets/img/chevron.png" alt="Chevron right icon" class="w-4 rotate-180">
+        </span>
+      </div>
+    </section>
+    <!-- Newsletter Subscription Section -->
+    <section class="flex flex-col text-center text-primary mt-28 gap-y-4 md:mt-40 lg:w-3/5 lg:mx-auto lg:gap-y-7">
+      <h2 class="text-3xl font-semibold lg:text-5xl">Subscribe to Our Newsletter for Design Insights</h2>
+      <p class="text-base font-medium text-secondary lg:text-2xl">Be the first to discover trends, inspirations, and special offers
+        as we bring the world of design directly to your inbox</p>
+      <form
+        class="flex flex-wrap items-center justify-center md:justify-between w-full gap-2 bg-white rounded drop-shadow-[0_10px_100px_rgba(0,0,0,0.24)] p-3 md:px-8 md:mt-10">
+        <img src="./assets/img/envelope.png" alt="Envelope icon" class="w-4">
+        <Label class="hidden">Email</Label>
+        <input type="text" placeholder="Enter your email address"
+          class="text-[#8C8C8C] placeholder:text-sm text-sm outline-0 border-0 md:flex-grow">
+        <button class="h-10 text-white rounded w-28 bg-primary md:w-44">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <!-- Footer Section -->
+
+  <footer class="flex flex-wrap gap-10 items-start justify-between p-12 -mt-10 bg-primary text-[#D1D1D1] lg:-mt-16 lg:py-24">
+    <!-- About and Social Links -->
+    <div class="flex flex-col gap-y-6 lg:w-1/5 lg:gap-y-12">
+      <img src="./assets/img/Logo.png" alt="VivaDecor logo" class="w-32 h-auto brightness-0 invert">
+      <p>VivaDecor your premier destination for luxury and modern interior design</p>
+      <ul class="flex items-center justify-start gap-3">
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/facebook.png" alt="Facebook icon">
+          </a>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/twitter.png" alt="Twitter icon">
+          </a>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/instagram.png" alt="Instgram icon">
+          </a>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/Linkdin.png" alt="Linkdin icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="lg:w-1/5">
+      <p class="mb-4 text-white lg:mb-6 lg:text-2xl">Our Services</p>
+      <ul class="flex flex-col gap-y-2 lg:gap-y-8">
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            Interior design
+          </a>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Outdoor design</a>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Lightning design</a>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Office design</a>
+        </li>
+      </ul>
+    </div>
+    <div class="lg:w-1/5">
+      <p class="mb-4 text-white lg:mb-6 lg:text-2xl">Our Services</p>
+      <ul class="flex flex-col gap-y-2 lg:gap-y-8">
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Reviews</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Careers</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Pricing</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Press inquires</a></li>
+      </ul>
+    </div>
+    <div class="lg:w-1/5">
+      <p class="mb-4 text-white lg:mb-6 lg:text-2xl">Our Services</p>
+      <p class="mb-5">info@vivadecor.com</p>
+      <p>Design Avenue Cityville, CA 90210 United States</p>
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
